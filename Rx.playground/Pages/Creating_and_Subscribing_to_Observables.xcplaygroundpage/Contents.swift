@@ -14,6 +14,7 @@ import RxSwift
  ## never
  Creates a sequence that never terminates and never emits any events. [More info](http://reactivex.io/documentation/operators/empty-never-throw.html)
  */
+//決して終了せず、いかなるイベントも発生させないシーケンスを作成します
 example("never") {
     let disposeBag = DisposeBag()
     let neverSequence = Observable<String>.never()
@@ -30,6 +31,7 @@ example("never") {
  ## empty
  Creates an empty `Observable` sequence that only emits a Completed event. [More info](http://reactivex.io/documentation/operators/empty-never-throw.html)
  */
+//Completedイベントのみを発生させる、空のObservableシーケンスを作成します
 example("empty") {
     let disposeBag = DisposeBag()
     
@@ -45,6 +47,8 @@ example("empty") {
  ## just
  Creates an `Observable` sequence with a single element. [More info](http://reactivex.io/documentation/operators/just.html)
  */
+//この例では、Observableシーケンスを作成し、購読することを一緒にチェーンすることも紹介しています
+//Observableシーケンスを1つの要素で作成します
 example("just") {
     let disposeBag = DisposeBag()
     
@@ -59,6 +63,7 @@ example("just") {
  ## of
  Creates an `Observable` sequence with a fixed number of elements.
  */
+//固定数の要素を持つ Observable シーケンスを作成します
 example("of") {
     let disposeBag = DisposeBag()
     
